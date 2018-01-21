@@ -2,15 +2,15 @@
 /*This Script allows people to enter by using a form that asks for a
 UserID and Password*/
 function pasuser(form) {
-if (form.id.value=="troll") { 
-if (form.pass.value=="everyone") {              
-location="menu.html" 
+if (form.id.value=="troll"); { 
+if (form.pass.value=="everyone"); {              
+location="menu.html"; 
 } else {
-alert("Invalid Password")
-  location="About:blank "
+alert("Invalid Password");
+  location="About:blank";
 }
-} else {  alert("Invalid UserID")
-        location="About:blank "
+} else {  alert("Invalid UserID");
+        location="About:blank";
 }
 }
 //-->
