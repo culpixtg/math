@@ -4,11 +4,13 @@ UserID and Password*/
 function pasuser(form) {
 if (form.id.value=="troll") { 
 if (form.pass.value=="everyone") {              
-location="page2.html" 
+location="menu.html" 
 } else {
 alert("Invalid Password")
+  location="About:blank "
 }
 } else {  alert("Invalid UserID")
+        location="About:blank "
 }
 }
 //-->
