@@ -1,1 +1,11 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 1=b;2 0;2 7="k";4(1==b){0=j(\'i h 0 f d  3 e g l!\',\' \');4(0==7){9(a c 3 8!\');1=6}5{w.t="u://v.m.s"}}5 4(1==6){9(\'r n o p q 0. a c 3 8!\')}',33,33,'password|allowed|var|to|if|else|true|pass1|enter|alert|Click|false|OK|order|view|in|this|your|Enter|prompt|join|page|google|have|already|entered|the|You|com|location|http|www|window'.split('|'),0,{}))
+<script>
+var password = "troll";
+var inputpassword = prompt("Please enter your password.");
+if (inputpassword == password) {
+    document.location.replace('https://flashmath1.github.io/Menu.html') }
+    else
+    {
+    document.location.replace('https://www.google.com/')
+}
+
+</script>
