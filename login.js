@@ -1,4 +1,4 @@
-<script>
+
 var password = "troll";
 var inputpassword = prompt("Please enter your password.");
 if (inputpassword == password) {
@@ -8,4 +8,4 @@ if (inputpassword == password) {
     document.location.replace('https://www.google.com/')
 }
 
-</script>
+
