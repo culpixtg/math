@@ -5,7 +5,7 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "flash" && password == "games"){
 alert ("Login successfully");
-window.location = "FlashMath1.github.io/Menu.html"; // Redirecting to other page.
+window.location = "https://flashmath1.github.io/Menu.html"; // Redirecting to other page.
 return false;
 }
 else{
