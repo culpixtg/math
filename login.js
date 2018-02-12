@@ -3,7 +3,7 @@ var attempt = 3; // Variable to count number of attempts.
 function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "troll" && password == "everyone"){
+if ( username == "flash" && password == "games"){
 alert ("Login successfully");
 window.location = "FlashMath1.github.io/Menu.html"; // Redirecting to other page.
 return false;
