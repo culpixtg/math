@@ -4,8 +4,6 @@ CHANGELOG
 
 FEBRUARY 2018 - Upgrade login script
 
-FEBRUARY 2018 - Added Bloons Tower Defence 5
-
 DECEMBER 2017 - Added login script
 
 DECEMBER 2017 - Added Super Smash Flash 2
