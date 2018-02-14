@@ -5,7 +5,8 @@
   <button onclick="window.location.href='https://flashmath1.github.io/Menu.html'">Return to Home</button>
 <h1>The King's League: Odyessey</h1>
 
-           Embed Here
- 
+   
+   <p><object data="embeddable_171311.swf" type="application/x-shockwave-flash" width="300" height="150"></object></p>
+  
   </body>
 </html>
