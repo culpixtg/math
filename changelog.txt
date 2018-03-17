@@ -1,5 +1,9 @@
 CHANGELOG
 
+March 2018 - Improved Site Navigation
+
+March 2018 - Abandoned the Developement of Untracked Web Browser
+
 FEBRUARY 2018 - Started the Developement of Untracked Web Browser
 
 FEBRUARY 2018 - Added Bouncy Heroes, Geometry Dash and Tetrix
