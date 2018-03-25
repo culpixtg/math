@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
 <body>
 
+<div class="navbar">
+  <a href="Menu.html">Home</a>
+  <a href="+Exercise1.html">Super Smash Flash 2</a>
+  <a href="-exercise1.html">Bouncy Heroes</a>
+  <a href="*exercise1.html">Geometry Dash</a>
+  <a href="+exercise2.html">Tetrix</a>
+   <a href="javascript_login.html">Logout</a>
+</div>
+
+<div class="main">
   <button onclick="window.location.href='https://flashmath1.github.io/Menu.html'">Return to Home</button>
 <h1>Tetrix</h1>
 
 <iframe src="https://cloudgames.com/games/html5/tetrix-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="360" height="640" frameborder="0" scrolling="no"></iframe>
  
-  </body>
+</div>
+
+</body>
 </html>
+
+
+
 
 
 
