@@ -1,5 +1,10 @@
 CHANGELOG
 
+
+March 2018 - Added The binding of Isaac
+
+March 2018 - Added site view counter
+
 March 2018 - Improved Site Navigation
 
 March 2018 - Abandoned the Developement of Untracked Web Browser
