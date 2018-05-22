@@ -33,7 +33,7 @@ body {margin:0;}
 <body>
 
 <div class="navbar">
-  <<?php include('nav_bar.html'); ?>
+  <?php include('nav_bar.html'); ?>
 </div>
 
 <div class="main">
