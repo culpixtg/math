@@ -184,14 +184,17 @@ if(document.getElementById('QUNhOsBGePir')){
   </div>
   
   <script>
-    function toggleMute(volume, id) {
+    volume = on
+    function toggleMute(id, image) {
     if (volume == off){
     volume = on
     document.getElementById(id).muted = false;
+    document.getElementById("image").src = "unmute.png";
 }
     if (volume == on){
      volume = off
       document.getElementById(id).muted = true;
+      document.getElementById("image").src = "mute.png";
     }
     }
     </script>
