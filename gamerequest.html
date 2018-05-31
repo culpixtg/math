@@ -1,7 +1,20 @@
-<form>
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd7cQSBxhcnGoz8PnuXlBQW4rTpgkwfA44MSP2HPcFWUcq74A/viewform?" target="hidden_iframe" onsubmit="submitted=true;">
   Name of the Game:<br>
-  <input type="text" name="gamename"><br>
+  <input type="text" name="entry.1247089328" id="entry.1247089328"><br>
   Url to a page with the Game:<br>
-  <input type="text" name="url">
+  <input type="text" name="entry.1751313811" id="entry.1751313811">
   <input type="submit" value="Submit">
 </form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been entered...');
+  });
+</script>
