@@ -154,6 +154,17 @@
   margin: 0;
   padding: 8px 20px;
 }
+#cssmenu ul li > ul li div {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
 #cssmenu,
 #cssmenu ul ul > li:hover > a,
 #cssmenu ul ul li a:hover {
@@ -170,6 +181,10 @@
   color: #ffffff;
 }
 #cssmenu ul ul a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > div:hover {
+  background: #080808;
   color: #ffffff;
 }
 #cssmenu > ul > li.has-sub > a:hover:before {
