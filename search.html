@@ -3,6 +3,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.dropbtn {
+    background-color: #white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background: grey;
+  color: #000000;
+}
 
 #myInput {
     border-box: box-sizing;
@@ -39,16 +52,20 @@
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
+.dropdown a:hover {
+background: #080808;
+  color: #ffffff;
+  }
 
 .show {display:block;}
 </style>
 </head>
 <body>
+
 <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+<button onclick="myFunction()" class="dropbtn">All Games</button>
   <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
     <a href="#about">About</a>
     <a href="#base">Base</a>
     <a href="#blog">Blog</a>
@@ -84,5 +101,4 @@ function filterFunction() {
 
 </body>
 </html>
-
 
