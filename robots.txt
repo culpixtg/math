@@ -2,3 +2,13 @@ User-agent: *
 Disallow: /nav_bar.html
 User-agent: *
 Disallow: /search.html
+User-agent: *
+Disallow: /adblocknotice.html
+User-agent: *
+Disallow: /license/flashmath1.txt
+User-agent: *
+Disallow: /javascript_login.html
+User-agent: *
+Disallow: /privacypolicy.html
+User-agent: *
+Disallow: /about.html
