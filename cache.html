@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Google Cache Search Engine</h2>
+<input id="query">
+<button type="button" onclick="execute_query()">Goto / Search</button>
+<script>
+function execute_query() {
+    var query
+    query = document.getElementById("query").value;
+    location.replace("https://webcache.googleusercontent.com/search?q=cache:" + query);
+}
+</script>
+</body>
+</html> 
