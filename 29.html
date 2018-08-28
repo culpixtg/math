@@ -26,7 +26,23 @@
 <div id="navbar"></div>
 <div class="main">
 <h1>Snake</h1>
-<iframe id="html5game" src="http://www.coolmath-games.com/0-snake/play" class="square" width="785px" height="600px" scrolling="no"></iframe>
+<object data="snake.swf" height="600" type="application/x-shockwave-flash" width="600">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#88C387">
+                    <param name="allowScriptAccess" value="always">
+                    <param name="allowFullScreen" value="true">
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                    <p> 
+                        Either scripts and active content are not permitted to run or Adobe Flash Player version
+                        10.0.0 or greater is not installed.
+                    </p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img alt="Get Adobe Flash Player" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif">
+                    </a>
+                <!--[if !IE]>-->
+                </object>
    <script>
       $("#navbar").load("nav_bar.html"); 
   </script>
