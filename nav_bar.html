@@ -349,8 +349,8 @@ body {
   $("#search").load("search.html"); 
    <script>
 var x = 36
-if (localStorage.getItem('games')) {
-	var games = localStorage.getItem('games');
+if (JSON.parse(localStorage.getItem('games'))) {
+	var games = JSON.parse(localStorage.getItem('games'));
  	if (games<x) {
 		if (x-games != 1) {
 			alert(x-games + " new games were added to this site since you last visited.");
@@ -363,8 +363,8 @@ if (localStorage.getItem('games')) {
 	}
 	console.log("No new Games");
 }
-localStorage.setItem('games',x);
-console.log("Updated games");
+localStorage.setItem('games',JSON.stringify(x));
+console.log("Updated games to 36");
 </script>
   </script>
 
