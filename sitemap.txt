@@ -1,6 +1,7 @@
 http://flashmath1.github.io/
 http://flashmath1.github.io/index.html
 http://flashMath1.github.io/untitled50.png
+http://flashMath1.github.io/favicon.ico
 http://flashmath1.github.io/1.html
 http://flashmath1.github.io/2.html
 http://flashmath1.github.io/3.html
@@ -37,6 +38,6 @@ http://flashmath1.github.io/33.html
 http://flashmath1.github.io/34.html
 http://flashmath1.github.io/35.html
 http://flashmath1.github.io/36.html
-
+http://flashmath1.github.io/37.html
 
 
