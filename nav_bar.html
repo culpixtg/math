@@ -345,33 +345,13 @@ body {
          </li>
       </ul>
    </li>
-   <div id="search"></div>
+
    
-   
+   <li class='active has-sub'><a href='search.html'><span>Search</span></a></li>
    
    
 </ul>
 </div>
-<script>
-  $("#search").load("search.html"); 
-var x = 36
-if (JSON.parse(localStorage.getItem('games'))) {
-	var games = JSON.parse(localStorage.getItem('games'));
- 	if (games<x) {
-		if (x-games != 1) {
-			alert(x-games + " new games were added to this site since you last visited.");
-			console.log(x-games + " new games were added to this site.");
-		}
-		else {
-			alert("1 new game was added to this site since you last visited.");
-			console.log("1 new game was added to this site.");
-		}
-	}
-	console.log("No new Games");
-}
-localStorage.setItem('games',JSON.stringify(x));
-console.log("Updated games to 36");
-  </script>
 
 </body>
 <html>
