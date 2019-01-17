@@ -15,7 +15,7 @@
   gtag('config', 'UA-124591787-1');
 </script>
 
-  <title>MONOPOLY at FLASHMATH1.github.io</title>
+  <title>Moto X3M 4 Winter at FLASHMATH1.github.io</title>
  <meta charset="utf-8">
   <meta name="Description" CONTENT="Moto X3M 4 Winter is one of many entertaining flash-based games located at FLASHMATH1.github.io">
   <meta name="google-site-verification" content="SUOhYrHR417hC2DHTgJY21VGtumjqjT9bQjqeQUTreA" />
@@ -206,7 +206,16 @@ display: block;
 <div class="main">
 <h1>Moto X3M 4 Winter</h1>
 <embed src="https://sites.google.com/site/newgamesk15/home/moto-x3m-4-winter.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="100%" height="100%" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
- 
+<script>
+var prefs = new gadgets.Prefs();
+var Furl = prefs.getString("url");
+var Fflashvars = prefs.getString("flashvars");
+var Fbase = prefs.getString("base");
+var Fbg = prefs.getString("bg");
+var Fmode = prefs.getString("mode");
+var content = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=11,0,0,0" width="100%" height="100%"><param name="movie" value="' + Furl + '"><param name="flashvars" value="' + Fflashvars + '"><param name="base" value="' + Fbase + '"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><param name="allowfullscreen" value="true"><param name="bgcolor" value="' + Fbg + '"><param name="wmode" value="' + Fmode + '"><embed src="' + Furl + '" flashvars="' + Fflashvars + '" base="' + Fbase + '" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="' + Fbg + '" wmode="' + Fmode + '" width="100%" height="100%" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"><\/embed><\/object>';
+document.getElementById("container").innerHTML = content;
+</script>
   <script>
   $("#navbar").load("nav_bar.html"); 
   </script>
