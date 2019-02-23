@@ -20,277 +20,144 @@ body {
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <style>
 
-      
-      
-      #cssmenu,
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
-  border: none;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#cssmenu {
-  height: 37px;
-  display: block;
-  border: 1px solid;
-  border-radius: 5px;
-  width: auto;
-  border-color: #080808;
-  margin: 0;
-  padding: 0;
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
 }
-#cssmenu > ul {
-  list-style: inside none;
-  margin: 0;
-  padding: 0;
-}
-#cssmenu > ul > li {
-  list-style: inside none;
+
+.navbar a {
   float: left;
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-#cssmenu.align-center > ul {
+  font-size: 16px;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-#cssmenu.align-center > ul > li {
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
   float: none;
-  margin-left: -3px;
-}
-#cssmenu.align-center ul ul {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   text-align: left;
 }
-#cssmenu.align-center > ul > li:first-child > a {
-  border-radius: 0;
-}
-#cssmenu > ul > li > a {
-  outline: none;
-  display: block;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
-  font-weight: 700;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-right: 1px solid #080808;
-  color: #ffffff;
-  padding: 12px 20px;
-}
-#cssmenu > ul > li:first-child > a {
-  border-radius: 5px 0 0 5px;
-}
-#cssmenu > ul > li > a:after {
-  content: "";
-  position: absolute;
-  border-right: 1px solid;
-  top: -1px;
-  bottom: -1px;
-  right: -2px;
-  z-index: 99;
-  border-color: #3c3c3c;
-}
-#cssmenu ul li.has-sub:hover > a:after {
-  top: 0;
-  bottom: 0;
-}
-#cssmenu > ul > li.has-sub > a:before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 6px;
-  border: 5px solid transparent;
-  border-top: 5px solid #ffffff;
-}
-#cssmenu > ul > li.has-sub:hover > a:before {
-  top: 19px;
-}
-#cssmenu > ul > li.has-sub:hover > a {
-  padding-bottom: 14px;
-  z-index: 999;
-  border-color: #3f3f3f;
-}
-#cssmenu ul li.has-sub:hover > ul,
-#cssmenu ul li.has-sub:hover > div {
-  display: block;
-}
-#cssmenu > ul > li.has-sub > a:hover,
-#cssmenu > ul > li.has-sub:hover > a {
-  background: #3f3f3f;
-  border-color: #3f3f3f;
-}
-#cssmenu ul li > ul,
-#cssmenu ul li > div {
-  display: none;
-  width: auto;
-  position: absolute;
-  top: 38px;
-  background: #3f3f3f;
-  border-radius: 0 0 5px 5px;
-  z-index: 999;
-  padding: 10px 0;
-}
-#cssmenu ul li > ul {
-  width: 200px;
-}
-#cssmenu ul ul ul {
-  position: absolute;
-}
-#cssmenu ul ul li:hover > ul {
-  left: 100%;
-  top: -10px;
-  border-radius: 5px;
-}
-#cssmenu ul li > ul li {
-  display: block;
-  list-style: inside none;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-#cssmenu ul li > ul li a {
-  outline: none;
-  display: block;
-  position: relative;
-  font: 10pt Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 8px 20px;
-}
-#cssmenu ul li > ul li div {
-  outline: none;
-  display: block;
-  position: relative;
-  font: 10pt Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 8px 20px;
-}
-#cssmenu,
-#cssmenu ul ul > li:hover > a,
-#cssmenu ul ul li a:hover {
-  background: #3c3c3c;
-  background: -moz-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c3c3c), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background: -o-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background: -ms-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-  background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
-}
-#cssmenu > ul > li > a:hover {
-  background: #080808;
-  color: #ffffff;
-}
-#cssmenu ul ul a:hover {
-  color: #ffffff;
-}
-#cssmenu > ul > li > div:hover {
-  background: #080808;
-  color: #ffffff;
-}
-#cssmenu > ul > li.has-sub > a:hover:before {
-  border-top: 5px solid #ffffff;
+
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-      </style>
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
 <body>
-	
-	
-	
-	
-	
-<div id='cssmenu'>
-<ul>
-   <li><a href='/index.html'><span>Home</span></a></li>
-	
-   <li><a href='/gamerequest.html'><span>Request a Game</span></a></li>
-	
-   <li class='active has-sub'><a href='#'><span>Multiplayer Games</span></a>
-      <ul>
-	 <li class='has-sub'><a href='/multiplayer-menu1.html'><span>Search for Games</span></a></li>
-	 <li class='active has-sub'><a href='#'><span>Popular</span></a>
-           <ul>
-	   	<li class='has-sub'><a href='/1.html'><span>Super Smash Flash 2</span></a></li>
-         	<li class='has-sub'><a href='/16.html'><span>Tank Trouble 2</span></a></li>
-         	<li class='has-sub'><a href='/5.html'><span>Gun Mayhem 2</span></a></li>
-	   </ul>
-      	 </li>
-      </ul>
-   </li>
-	
-   <li class='active has-sub'><a href='#'><span>Strategy & Logic Games</span></a>
-      <ul>
-	 <li class='has-sub'><a href='/strategy-menu1.html'><span>Search for Games</span></a></li>
-	 <li class='active has-sub'><a href='#'><span>Popular</span></a>
-           <ul>
-	   	<li class='has-sub'><a href="22.html">Bloons Tower Defense 5</a></li>
-         	<li class='has-sub'><a href="13.html">Stick War 2</a></li>
-         	<li class='has-sub'><a href="26.html">The Binding of Isaac</a></li>
-	   </ul>
-      	 </li>
-      </ul>
-   </li>
-	
-   <li class='active has-sub'><a href='#'><span>Platformer Games</span></a>
-      <ul>
-	 <li class='has-sub'><a href='/platformer-menu1.html'><span>Search for Games</span></a></li>
-	 <li class='active has-sub'><a href='#'><span>Popular</span></a>
-           <ul>
-	   	<li class='has-sub'><a href="44.html">Run 3</a></li>
-         	<li class='has-sub'><a href="25.html">Super Mario 63</a></li>
-         	<li class='has-sub'><a href="23.html">Super Mario Crossover</a></li>
-	   </ul>
-      	 </li>
-      </ul>
-   </li>
-	
-   <li class='active has-sub'><a href='#'><span>Action Games</span></a>
-      <ul>
-	 <li class='has-sub'><a href='/action-menu1.html'><span>Search for Games</span></a></li>
-	 <li class='active has-sub'><a href='#'><span>Popular</span></a>
-           <ul>
-	   	<li class='has-sub'><a href="1.html">Super Smash Flash 2</a></li>
-         	<li class='has-sub'><a href="25.html">Super Mario 63</a></li>
-         	<li class='has-sub'><a href="17.html">Raze</a></li>
-	   </ul>
-      	 </li>
-      </ul>
-   </li>
-	
-   <li class='active has-sub'><a href='#'><span>Arcade Games</span></a>
-      <ul>
-	 <li class='has-sub'><a href='/arcade-menu1.html'><span>Search for Games</span></a></li>
-	 <li class='active has-sub'><a href='#'><span>Popular</span></a>
-           <ul>
-	   	<li class='has-sub'><a href="2.html">Tetris</a></li>
-         	<li class='has-sub'><a href="29.html">Snake</a></li>
-	   </ul>
-      	 </li>
-      </ul>
-   </li>
-	
-   <li><a href='/contactus.html'><span>Contact Us</span></a></li>
-	
-   <li><a href='/about.html'><span>About</span></a></li>
-	
-   <li><a href='/privacypolicy.html'><span>Privacy Policy</span></a></li>
-	
-</ul>
+
+<div class="navbar">
+  <a href="/index.html">Home</a>
+  <a href="/gamerequest.html">Request Game</a>
+  <div class="dropdown">
+    <button class="dropbtn">Multiplayer Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/multiplayer-menu1.html">Search Multiplayer Games...</a>
+      <a href="/1.html">Super Smash Flash 2</a>
+      <a href="/16.html">Tank Trouble 2</a>
+      <a href="/5.html">Gun Mayhem 2</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Strategy & Logic Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/strategy-menu1.html">Search Strategy & Logic Games...</a>
+      <a href="/22.html">Bloons Tower Defense 5</a>
+      <a href="/13.html">Stick War 2</a>
+      <a href="/26.html">The Binding of Isaac</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Platformer & RPG Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/platformer-menu1.html">Search Platformer & RPG Games...</a>
+      <a href="/44.html">Run 3</a>
+      <a href="/25.html">Super Mario 63</a>
+      <a href="/23.html">Super Mario Crossover</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Action Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href='/action-menu1.html'>Search Action Games...</a>
+      <a href="/1.html">Super Smash Flash 2</a>
+      <a href="/25.html">Super Mario 63</a>
+      <a href="/17.html">Raze</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Arcade Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/arcade-menu1.html">Search Arcade Games...</a>
+      <a href="/2.html">Tetris</a>
+      <a href="/29.html">Snake</a>
+    </div>
+  </div>
+  <a href="/contactus.html">Contact Us</a>
+  <a href="/about.html">About</a>
+   <a href="/privacypolicy.html">Privacy Policy</a>
 </div>
-	  
-<style>
-body { width: 100%; margin: 0 auto; }
-</style>
+</body>
+</html>
+
+	
 </body>
 <html>
