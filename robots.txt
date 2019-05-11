@@ -12,3 +12,5 @@ User-agent: *
 Disallow: /privacypolicy.html
 User-agent: *
 Disallow: /about.html
+User-agent: *
+Sitemap: /sitemap.txt
