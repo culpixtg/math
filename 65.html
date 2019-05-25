@@ -31,14 +31,12 @@ align: center;
 <div class="main">
 <h1>Papa's Donuteria</h1>
 <!-- Embed Code -->
-<div id="game"></div>
+<param name="movie" value="/papasdonuteria.swf"> <embed src="/papasdonuteria.swf" width="700" height="500"> </embed> </object>
 <center>
 <div id="advertisement" align=center>Advertisement:<br></div>
+</center>
 <script>
 $("#navbar").load("nav_bar.html"); 
-$("#game").load("preloader.html");
-let h = ' <param name="movie" value="/papasdonuteria.swf"> <embed src="/papasdonuteria.swf" width="700" height="500"> </embed> </object>';
-document.getElementById('preloader').insertAdjacentHTML('beforeend', h);
 </script>
 </body>
 </html>
