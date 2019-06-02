@@ -1,0 +1,53 @@
+<html>
+<div id="loader">
+<div id="bar">
+  <div id="circle"></div>
+  <div id="p"><p><br>  <h4>FLASHMATH1</h4></p></div>
+  </div>
+</div>
+<style>
+ html, body {
+  background: #2f8433;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#bar {
+  position: relative;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 150px;
+}
+
+#circle {
+  position: absolute;
+  top: -50px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #fff;
+  border-radius: 30%;
+  -webkit-animation: move 10s infinite;
+}
+
+#p {
+  position: absolute;
+  top: -35px;
+  right: -96px;
+  text-transform: uppercase;
+  color: #2f8433;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@-webkit-keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100 {right: 100%;}
+}  
+</style>
+</html>
