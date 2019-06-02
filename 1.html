@@ -620,12 +620,18 @@ align: center;
 <h1>Super Smash Flash 2</h1>
 <!-- Embed Code -->
 <center>
- <embed wmode="opaque" bgcolor="#000000" allowfullscreen="true" width="800" height="450" flashvars="height=200&amp;width=400&amp;file=http%3A%2F%2Fvid122.photobucket.com%2Falbums%2Fo250%2FSIRSCUBA%2FCat%2FBABY-KITTEN.flv" base="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&amp;container=enterprise&amp;rewriteMime=application%2Fx-shockwave-flash&amp;gadget=http%3A%2F%2Fgrinsted.googlepages.com%2Fflashgadget.xml/http://games.211games.com/o/ssf2_9a2/" id="swfContainer0" type="application/x-shockwave-flash" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&amp;container=enterprise&amp;rewriteMime=application%2Fx-shockwave-flash&amp;gadget=http%3A%2F%2Fgrinsted.googlepages.com%2Fflashgadget.xml/http://games.211games.com/o/ssf2_9a2/ssf2n.swf" Sorry, your browser does not support javascript. <img src="untitled18.png" alt="Flash Error">
+ <div id="preloader"><iframe src="preloader.html" height="300" width="800"></iframe></div>
 </center>
 <center>
 <div id="advertisement" align=center>Advertisement:<br></div>
 <script>
-$("#navbar").load("nav_bar.html"); 
+$("#navbar").load("nav_bar.html");
+var el = document.getElementById("preloader");
+var newEl = document.createElement('div');
+newEl.innerHTML = '<embed wmode="opaque" bgcolor="#000000" allowfullscreen="true" width="800" height="450" flashvars="height=200&amp;width=400&amp;file=http%3A%2F%2Fvid122.photobucket.com%2Falbums%2Fo250%2FSIRSCUBA%2FCat%2FBABY-KITTEN.flv" base="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&amp;container=enterprise&amp;rewriteMime=application%2Fx-shockwave-flash&amp;gadget=http%3A%2F%2Fgrinsted.googlepages.com%2Fflashgadget.xml/http://games.211games.com/o/ssf2_9a2/" id="swfContainer0" type="application/x-shockwave-flash" src="https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&amp;container=enterprise&amp;rewriteMime=application%2Fx-shockwave-flash&amp;gadget=http%3A%2F%2Fgrinsted.googlepages.com%2Fflashgadget.xml/http://games.211games.com/o/ssf2_9a2/ssf2n.swf" Sorry, your browser does not support javascript. <img src="untitled18.png" alt="Flash Error">';
+setTimeout(function(){
+    el.parentNode.replaceChild(newEl, el);
+}, 5200);
 </script>
 </body>
 </html>
