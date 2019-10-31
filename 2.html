@@ -41,7 +41,6 @@ $("#navbar").load("nav_bar.html");
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
 newEl.innerHTML = '<object data="tetris.swf" height="529" type="application/x-shockwave-flash" width="728"><param name="quality" value="high"<param name="bgcolor" value="#ffffff"> <param name="allowScriptAccess" value="always"> <param name="allowFullScreen" value="true"> <a href="http://www.adobe.com/go/getflashplayer"> <img alt="Get Adobe Flash Player" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"></a></object>'
-<script>
 setTimeout(function(){
 el.parentNode.replaceChild(newEl, el);
 }, 5200);
