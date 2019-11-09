@@ -15,7 +15,7 @@
 <div>
   <div id="advertisement">
 	  <script>
-	  var displayCode = ["<div class='sharethis-inline-follow-buttons'></div>","<a href='contactus.html' target='_top'><img src='images.jfif'>", "<figure><figcaption>Advertisement</figcaption><a href='https://www.twitch.tv/opmichael105' target='_top'><img src='ad001.png' alt='Advertisement'></a></figure>"];
+	  var displayCode = ["<div id='discordInviteBox'></div>","<div class='sharethis-inline-follow-buttons'></div>","<a href='contactus.html' target='_top'><img src='images.jfif'>", "<figure><figcaption>Advertisement</figcaption><a href='https://www.twitch.tv/opmichael105' target='_top'><img src='ad001.png' alt='Advertisement'></a></figure>"];
 	  function getAd(imgAr) {
    	 var num = Math.floor( Math.random() * imgAr.length );
     	var img = imgAr[ num ];
@@ -23,22 +23,6 @@
    	 document.write(imgStr); document.close();
 	}
 		  </script>
-	  
-	  
-	  <!--
-<a href="contactus.html" target="_top">
-  <img src="images.jfif" alt="PLACE YOUR AD HERE style="width:860px;height:189px;border:0">
-	
-	 <center>
-	<figure>
-	<figcaption>Advertisement</figcaption>
-	<a href="https://www.twitch.tv/opmichael105" target="_top">
-	<img src="ad001.png" alt="Advertisement">
-	</a>
-	</figure>
-	</center>
-  </a>
--->
 	<script>getAd(displayCode);</script>
   </div>
 </div>
