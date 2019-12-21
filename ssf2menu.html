@@ -29,7 +29,7 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Super Smash Flash 2 Versions</h1>
+<h1>Super Smash Flash 2 Version Menu</h1>
 <!-- Embed Code -->
 <center
 ><div id="preloader"><iframe src="preloader.html" height="500" width="800"></iframe></div>
@@ -38,7 +38,7 @@ align: center;
 $("#navbar").load("nav_bar.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
-newEl.innerHTML = '<meta name="viewport" content="width=device-width, initial-scale=1"><style>.vertical-menu {width: 250px;}.vertical-menu a {background-color: #eee;color: black; display: block;padding: 12px;text-decoration: none;}.vertical-menu a:hover {background-color: #ccc;}.vertical-menu a.active {background-color: #4CAF50;color: white;}</style><h1>Super Smash Flash 2 Versions</h1><div class="vertical-menu"><a href="/81.html">SSF2 1.0.3.2 Beta (Newest)</a><a href="/79.html">SSF2 0.9.1748 B</a><a href="/1.html">SSF2 0.9.0.1956 A</a></div>'
+newEl.innerHTML = '<meta name="viewport" content="width=device-width, initial-scale=1"><style>.vertical-menu {width: 250px;}.vertical-menu a {background-color: #eee;color: black; display: block;padding: 12px;text-decoration: none;}.vertical-menu a:hover {background-color: #ccc;}.vertical-menu a.active {background-color: #4CAF50;color: white;}</style><center><div class="vertical-menu"><a href="/81.html">SSF2 1.0.3.2 Beta (Newest)</a><a href="/79.html">SSF2 0.9.1748 B</a><a href="/1.html">SSF2 0.9.0.1956 A</a></div></center>'
 setTimeout(function(){
 el.parentNode.replaceChild(newEl, el);
 }, 5200);
