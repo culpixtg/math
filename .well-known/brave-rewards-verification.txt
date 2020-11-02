@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: flashmath1.github.io
+Token: ab43d1c2cce543a6ad8b892d0e3a3159dcc130467f047d139018aea2118053ac

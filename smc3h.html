@@ -1,0 +1,289 @@
+<center>
+<div class="GamePanel">
+<div class="GamePanelInner" style="width: 512px; height: 480px;">
+<div class="GamePlayContainer">
+<div id="GameContainer" style="width: 512px; height: 480px;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="512" height="480" id="GameSwfObject">
+                        <param name="movie" value="http://cache.hackedonlinegames.com/uploads/games/files/495/5PGZL6NUT5OJ.swf?version=5">
+                        <param name="quality" value="high">
+                        
+                        <param name="allowFullScreen" value="false">
+                        <param name="allowFullScreenInteractive" value="false">
+                        <param name="allowScriptAccess" value="never">
+                        <param name="allowNetworking" value="internal">
+                        <embed src="http://cache.hackedonlinegames.com/uploads/games/files/495/5PGZL6NUT5OJ.swf?version=5" quality="high" width="512" height="480" id="GameSwfEmbed" name="GameSwf" allowfullscreen="false" allowfullscreeninteractive="false" allowscriptaccess="never" allownetworking="internal" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer">
+                     </object></div>
+<div id="PlayOverlay" style="width: 512px; height: 480px; display: none;">
+</div>
+</div>
+</div>
+<script type="text/javascript">
+			jQuery(function($) {
+            var detectWebGL = function () {
+               var support = (function () {
+                  try {
+                     var canvas = document.createElement('canvas');
+                     return !!window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+                  } catch (e) {
+                     return false;
+                  }
+               })();
+
+               if (!support) {
+                  try {
+                     _gaq.push(['_trackEvent', 'Missing Software', 'WebGL']);
+                  } catch (e) { }
+
+                  var obj = $('#GameContainer');
+                  obj.html('<'+'div style="width: 400px; margin: auto; position: relative; top: 50%;">' +
+                     '<'+'div style="display: block; height: 140px; position: relative; top: -70px; background: #000; color: #fff; font-size: 18px;">' +
+                     '<'+'div style="text-align: center;">' +
+                     'Your browser does not seem to support WebGL.' +
+                     '<'+'br><'+'br>' +
+                     'For the optimal experience, please play using <a href=\"https://www.google.com/chrome/browser/desktop/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Chrome</b></a>, <a href=\"https://www.mozilla.org/en-US/firefox/new/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Firefox</b></a> or <a href=\"http://browser.yandex.com/\" style=\"color: #eee; cursor: pointer;\" target=\"_blank\"><b>Yandex Browser</b></a>.' +
+                     '<'+'/div>' +
+                     '<'+'/div>' +
+                     '<'+'/div>');
+
+                  return false;
+               }
+
+               return true;
+            }
+
+
+				jQuery(document).ready(function($) {
+
+					$('#PlayOverlay').hide();
+   				var gc = $('#GameContainer');
+
+   				var gameName = 'Super Mario Bros. Crossover 3';
+					try {
+   					_gaq.push(['_trackEvent', 'Game', 'Play', gameName]);
+					} catch (e) { }
+
+					gc.width(512);
+					gc.height(480);
+
+
+                  if (navigator.userAgent.match(/Android.+Mobile/) || navigator.userAgent.match(/RIM Tablet OS/) || navigator.userAgent.match(/BB10.+Mobile/)) {
+                     //swfOptions["menu"] = false;
+                     //swfOptions["allowFullScreen"] = true;
+                     //swfOptions["fullScreenOnSelection"] = true;
+                  }
+
+                  function launch() {
+                     
+                     $("#GameSwfObject").replaceWith("<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\n                     codebase=\"http:\/\/download.macromedia.com\/pub\/shockwave\/cabs\/flash\/swflash.cab#version=10,0,0,0\"\n                     width=\"512\" height=\"480\" id=\"GameSwfObject\">\n                        <param name=\"movie\" value=\"http:\/\/cache.hackedonlinegames.com\/uploads\/games\/files\/495\/5PGZL6NUT5OJ.swf?version=5\" \/>\n                        <param name=\"quality\" value=\"high\" \/>\n                        \n                        <param name=\"allowFullScreen\" value=\"false\" \/>\n                        <param name=\"allowFullScreenInteractive\" value=\"false\" \/>\n                        <param name=\"allowScriptAccess\" value=\"never\" \/>\n                        <param name=\"allowNetworking\" value=\"internal\" \/>\n                        <embed src=\"http:\/\/cache.hackedonlinegames.com\/uploads\/games\/files\/495\/5PGZL6NUT5OJ.swf?version=5\"\n                           quality=\"high\"\n                           width=\"512\"\n                           height=\"480\"\n                           id=\"GameSwfEmbed\"\n                           name=\"GameSwf\"\n                           \n                           allowFullScreen=\"false\"\n                           allowFullScreenInteractive=\"false\"\n                           allowScriptAccess=\"never\"\n                           allowNetworking=\"internal\"\n                           type=\"application\/x-shockwave-flash\"\n                           pluginspage=\"http:\/\/www.adobe.com\/go\/getflashplayer\"><\/embed>\n                     <\/object>");
+                  };
+
+
+                  
+(function(){
+   var adsManager;
+   var adsLoader;
+   var adDisplayContainer;
+   var intervalTimer;
+
+   var gameStarted = false;
+   var adRequested = false;
+
+   var hiddenField, visibilityChangeEvent; 
+
+   function VanillaIMA_startGame() {
+      if (gameStarted) return;
+      gameStarted = true;
+
+      document.getElementById("GoogleAdPreloader").style.display = "none";
+
+      if (typeof console !== "undefined") console.log("VanillaIMA_startGame");
+
+      launch();
+   }
+
+   function VanillaIMA_init() {
+      if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Init");
+
+      try {
+         VanillaIMA_setUpIMA();
+      } catch (e) {
+         if (typeof console !== "undefined") console.log("VanillaIMA_init", e);
+         if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Error (Init)");
+         
+         VanillaIMA_startGame();
+
+         if (typeof Raven !== "undefined") Raven.captureException(e);
+      }
+   }
+
+   function VanillaIMA_onVisibilityChange() {
+      if (!document[hiddenField]) {
+         // if (typeof console !== "undefined") console.log("VanillaIMA_onVisibilityChange", document[hiddenField]);
+         
+         VanillaIMA_requestAds();
+      }
+   }
+
+   function VanillaIMA_requestAds() {
+      if (adRequested) return;
+      adRequested = true;
+
+      // Request video ads.
+      var adsRequest = new google.ima.AdsRequest();
+      adsRequest.adTagUrl = "https:\/\/ima3vpaid.appspot.com\/?adTagUrl=https%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fclient%3Dca-games-pub-1232265399417302%26slotname%3D3936553765%26ad_type%3Dvideo%26description_url%3Dhttp%253A%252F%252Fwww.hackedonlinegames.com%26max_ad_duration%3D30000%26videoad_start_delay%3D0&type=js&vpmute=0&vpa=1";
+
+      // Force image/text ads to render with Full-Slot UI
+      adsRequest.forceNonLinearFullSlot = true;
+
+      // Specify the linear and nonlinear slot sizes. This helps the SDK to
+      // select the correct creative if multiple are returned.
+      adsRequest.linearAdSlotWidth = 512;
+      adsRequest.linearAdSlotHeight = 450;
+
+      adsRequest.nonLinearAdSlotWidth = 512;
+      adsRequest.nonLinearAdSlotHeight = 450;
+
+      adsLoader.requestAds(adsRequest);
+   }
+
+   function VanillaIMA_setUpIMA() {
+      // Page Visibility API
+      if (typeof document.hidden !== "undefined") {
+         hiddenField = "hidden";
+         visibilityChangeEvent = "visibilitychange";
+      } else if (typeof document.msHidden !== "undefined") {
+         hiddenField = "msHidden";
+         visibilityChangeEvent = "msvisibilitychange";
+      } else if (typeof document.webkitHidden !== "undefined") {
+         hiddenField = "webkitHidden";
+         visibilityChangeEvent = "webkitvisibilitychange";
+      }
+
+      // We assume the adContainer is the DOM id of the element that will house the ads.
+      adDisplayContainer = new google.ima.AdDisplayContainer(document.getElementById("GoogleAdPreloaderIMA"));
+      // Initialize the container. Must be done via a user action on mobile devices.
+      adDisplayContainer.initialize();
+
+      // Create ads loader.
+      adsLoader = new google.ima.AdsLoader(adDisplayContainer);
+      // Listen and respond to ads loaded and error events.
+      adsLoader.addEventListener(
+         google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED,
+         VanillaIMA_onAdsManagerLoaded,
+         false
+      );
+      adsLoader.addEventListener(
+         google.ima.AdErrorEvent.Type.AD_ERROR,
+         VanillaIMA_onAdError,
+         false
+      );
+
+      if (hiddenField) {
+         document.addEventListener(visibilityChangeEvent, VanillaIMA_onVisibilityChange, false);
+         VanillaIMA_onVisibilityChange();
+      } else {
+         // no vis support
+         VanillaIMA_requestAds();
+      }
+
+      if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Setup");
+   }
+
+   function VanillaIMA_onAdsManagerLoaded(adsManagerLoadedEvent) {
+      if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Manager Loaded");
+
+      var dummyContent = {
+         time:function() {
+            return 0;
+         }
+      };
+
+      // videoContent should be set to the content video element.
+      adsManager = adsManagerLoadedEvent.getAdsManager(dummyContent);
+
+      // Add listeners to the required events.
+      adsManager.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, VanillaIMA_onAdError);
+      adsManager.addEventListener(google.ima.AdEvent.Type.ALL_ADS_COMPLETED, VanillaIMA_onAdEvent);
+
+      // Listen to any additional events, if necessary.
+      adsManager.addEventListener(google.ima.AdEvent.Type.LOADED, VanillaIMA_onAdEvent);
+      adsManager.addEventListener(google.ima.AdEvent.Type.STARTED, VanillaIMA_onAdEvent);
+      adsManager.addEventListener(google.ima.AdEvent.Type.COMPLETE, VanillaIMA_onAdEvent);
+      adsManager.addEventListener(google.ima.AdEvent.Type.USER_CLOSE, VanillaIMA_onAdEvent);
+
+      try {
+         // Initialize the ads manager. Ad rules playlist will start at this time.
+         adsManager.init(512, 450, google.ima.ViewMode.NORMAL);
+         // Call play to start showing the ad. Single video and overlay ads will
+         // start at this time; the call will be ignored for ad rules.
+         adsManager.start();
+      } catch (e) {
+         // An error may be thrown if there was a problem with the VAST response.
+         if (typeof console !== "undefined") console.log("VanillaIMA_playAds", e);
+         if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Error (Manager)");
+         
+         VanillaIMA_startGame();
+
+         if (typeof Raven !== "undefined") Raven.captureException(e);
+      }
+   }
+
+   function VanillaIMA_onAdEvent(adEvent) {
+      if (typeof console !== "undefined") console.log("VanillaIMA_onAdEvent", adEvent.type);
+
+      // Retrieve the ad from the event. Some events (e.g. ALL_ADS_COMPLETED)
+      // don't have ad object associated.
+      var ad = adEvent.getAd();
+      switch (adEvent.type) {
+         case google.ima.AdEvent.Type.LOADED:
+            if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Event LOADED");
+            break;
+         case google.ima.AdEvent.Type.STARTED:
+            if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Event STARTED");
+            break;
+         case google.ima.AdEvent.Type.USER_CLOSE:
+            if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Event USER_CLOSE");
+            VanillaIMA_startGame();
+            break;
+         case google.ima.AdEvent.Type.ALL_ADS_COMPLETED:
+            if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Event ALL_ADS_COMPLETED");
+            VanillaIMA_startGame();
+            break;
+         case google.ima.AdEvent.Type.COMPLETE:
+            if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Event COMPLETE");
+            VanillaIMA_startGame();
+            break;
+      }
+   }
+
+   function VanillaIMA_onAdError(adErrorEvent) {
+      if (typeof console !== "undefined") console.log("VanillaIMA_onAdError", adErrorEvent.getError());
+      if (typeof ga !== "undefined") ga("send", "event", "IMA", "IMA Error (Event)");
+
+      if (adsManager) adsManager.destroy();
+
+      VanillaIMA_startGame();
+
+      if (typeof Raven !== "undefined") Raven.captureException(adErrorEvent.getError());
+   }
+
+   VanillaIMA_init();
+})();
+         
+					(function() {
+						$.ajax({
+							url: '/game/markview/1716',
+							dataType: 'json',
+							success: function(json) {
+								if (json.CountPlays) {
+									$('#CountPlays').numberFormat(parseInt(json.CountPlays));
+								}
+							}
+						});
+					})();
+				});
+			});
+		</script>
+<div class="GamePanelCheatDescription">
+Cheat menu unlocked. (Options -> Cheats)
+</div>
+</center>

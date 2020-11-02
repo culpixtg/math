@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+  body {}
+* {
+  box-sizing: border-box;
+}
+html,body { height:130%; }
+  
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div id="navbar"></div>
+<h1>Arcade Games</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Games..." title="Search for Game">
+
+<ul id="myUL">
+<li>    
+<a href="53.html">Contra</a></li><li>
+<a href="54.html">Galaga</a></li><li>
+<a href="62.html">Kirby and The Amazing Mirror(GBA)</a></li><li> 
+<a href="52.html">Pacman</a></li><li>
+<a href="/81.html">Pokemon Emerald (GBA)</a>
+<a href="29.html">Snake</a></li><li>
+<a href="2.html">Tetris</a></li><li> 
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    <script src="/ads.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("#navbar").load("nav_bar.html"); 
+if(document.getElementById('QUNhOsBGePir')){
+//no adblockers detected
+} else { 
+$("#popup").load("https://flashmath1.github.io/popup/popup.html");
+}
+</script>
+
+</body>
+</html>

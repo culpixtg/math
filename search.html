@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+  body { background: url(https://www.upstagedowntown.com/wp-content/uploads/2014/07/Green-Background-Image-CSS-Wallpaper-300x225.png); }
+* {
+  box-sizing: border-box;
+}
+html,body { height:130%; }
+  
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div id="navbar"></div>
+<h1>Search All Games</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Games..." title="Type in a name">
+
+<ul id="myUL">
+<li>    
+<a href="1.html">Super Smash Flash 2</a></li><li>
+    <a href="16.html">Tank Trouble 2</a></li><li>
+    <a href="25.html">The Binding of Isaac</a></li><li>
+    <a href="20.html">Strike Force Heroes 2</a></li><li>
+    <a href="22.html">Bloons Tower Defense 5</a></li><li>
+    <a href="3.html">Pokemon Tower Defense 2</a></li><li>
+    <a href="15.html">Pokemon Tower Defense 3</a></li><li>
+    <a href="31.html">1v1 Hockey</a></li><li> 
+    <a href="11.html">1v1 Soccer</a></li><li>
+    <a href="32.html">1v1 Football</a></li><li>
+    <a href="33.html">1v1 Basketball</a></li><li>
+    <a href="36.html">1v1 Tennis</a></li><li>
+    <a href="28.html">World Wars 2</a></li><li>  
+    <a href="17.html">Raze</a></li><li> 
+    <a href="9.html">Feudalism 2</a></li><li>  
+    <a href="8.html">Flight</a></li><li>
+    <a href="19.html">Geometry Dash</a></li><li>
+    <a href="21.html">Hex Empire</a></li><li>
+    <a href="23.html">Super Mario Crossover</a></li><li>
+    <a href="24.html">Caribbean Admiral</a></li><li>
+    <a href="2.html">Tetrix</a></li><li>
+    <a href="4.html">Learn to Fly 2</a></li><li>
+    <a href="18.html">Learn to Fly 3</a></li><li>
+    <a href="5.html">Gun Mayhem 2</a></li><li>
+    <a href="6.html">Clicker Heroes</a></li><li>
+    <a href="10.html">Bouncy Heroes</a></li><li>
+    <a href="12.html">Bubble Tanks 2</a></li><li>
+    <a href="13.html">Stick War 2</a></li><li>
+    <a href="14.html">Chess</a></li><li>
+    <a href="7.html">Duck Life 3</a></li><li>
+    <a href="25.html">Super Mario 63</a></li><li>
+    <a href="27.html">Monopoly</a></li><li>
+    <a href="2.html">Tetris</a></li><li> 
+    <a href="29.html">Snake</a></li><li>
+    <a href="30.html">Dino Run</a></li><li>
+    <a href="34.html">Sushi Cat</a></li><li>
+    <a href="35.html">Airport Madness 4</a></li><li>
+    <a href="37.html">Aqua-Boy</a></li><li>
+    <a href="39.html">Civilization Wars 2</a></li><li>
+    <a href="38.html">Clicker Heroes HACKED</a></li><li>
+    <a href="40.html">Warfare 1917</a></li>
+  <a href="41.html">Awesome Tanks 2</a></li>
+  <a href="43.html">Super Fighters</a></li>
+  <a href="45.html">Battleship</a></li>
+  
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    <script src="/ads.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("#navbar").load("nav_bar.html"); 
+if(document.getElementById('QUNhOsBGePir')){
+//no adblockers detected
+} else { 
+$("#popup").load("https://flashmath1.github.io/popup/popup.html");
+}
+</script>
+
+</body>
+</html>
+
