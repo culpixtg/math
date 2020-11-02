@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /search.html
-User-agent: *
-Disallow: /adblocknotice.html
-User-agent: *
-Disallow: /javascript_login.html
