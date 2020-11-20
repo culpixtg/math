@@ -32,7 +32,7 @@
 <body>
 <div id="navbar"></div>
 <div class="main">
-  <h1>Bubble Tanks 2</h1>
+  <h1>Bubble Tanks 2</h1><div id="ruffle_inject_div"></div>
 <embed src="BubbleTanks2.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="black" wmode="window" width="70%" height="70%" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
  </div>
   <style>
@@ -46,7 +46,8 @@
 <div id="gamedesc">Bubble Tanks 2 is an top-view tank-rpg game where the player travels from bubble-arena to bubble-arena, killing enemies and evolving.
 The game begins with the player in the center bubble controlling small tank that can move around and shoot. The first enemies don't attack back and when killed, drop bubbles that help evolve the player's tank. Once all enemies are killed, all uncollected bubbles follow the player. After reaching certain amounts of bubbles, the player can evolve their tank to adopt a more defensive, offensive, or balanced playstyle. As you increase your distance from the center, enemies will begin attacking and grow steadily stronger, eventually leading up to powerful bosses which the player can fight with their evolved tank.</div>
 <script>
-  $("#navbar").load("nav_bar.html");   $("#footer").load("footer.html"); 
+  $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html");   $("#footer").load("footer.html"); 
   </script>
 </body>
 </html>

@@ -29,13 +29,14 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Pokemon Emerald (GBA)</h1>
+<h1>Pokemon Emerald (GBA)</h1><div id="ruffle_inject_div"></div>
 <!-- Embed Code -->
 <center
 ><div id="preloader"><iframe src="preloader.html" height="800" width="800"></iframe></div>
 </center>
 <script>
 $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
 newEl.innerHTML = '<iframe src="https://www.retrogames.cc/embed/19514-pokemon-emerald-u-trashman.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>'

@@ -380,12 +380,13 @@ display: block;
 <div id="navbar"></div>
 
 <div class="main">
-  <h1>Chess</h1>
+  <h1>Chess</h1><div id="ruffle_inject_div"></div>
 <embed src="/Chess.swf" quality="high" pluginspage="//www.macromedia.com/go/getflashplayer" play="true" loop="true" wmode="transparent" allowfullscreen="true" flashvars="" type="application/x-shockwave-flash" align="middle" height="400px" width="500px">
 <h5>Don't just Check him, <strong>CHECKMATE<strong> your Rival and don't be defeated in CHESS!</h5>
  </div>
 <script>
-  $("#navbar").load("nav_bar.html");   $("#footer").load("footer.html"); 
+  $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html");   $("#footer").load("footer.html"); 
   </script>
 </body>
 </html>

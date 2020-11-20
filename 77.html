@@ -29,7 +29,7 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Super Mario Crossover 3 Hacked</h1>
+<h1>Super Mario Crossover 3 Hacked</h1><div id="ruffle_inject_div"></div>
 <!-- Embed Code -->
 <center
 ><div id="preloader"><iframe src="preloader.html" height="800" width="800"></iframe></div>
@@ -38,6 +38,7 @@ align: center;
 
 <script>
 $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
 newEl.innerHTML = '<iframe src="smc3h.html" height="512" width="512" scrolling="no" frameBorder="0"></iframe>';

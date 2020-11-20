@@ -732,12 +732,13 @@ display: block;
 
 <div class="main">
 
-<h1>Duck Life 3</h1>
+<h1>Duck Life 3</h1><div id="ruffle_inject_div"></div>
 <embed src="dl3.swf" width="750" height="480" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" menu="false"> 
 <style> #gamedesc { background-color: lightgrey; width: 600px; padding: 25px; margin: 25px; } </style> <div id="gamedesc" >Duck Life 3 is the third version of the upgrading game Duck Life. In the game, players hatch ducklings and train them, leveling up their skills: running, climbing, swimming, and flying. Training also gives the player coins, which can be spent on Seeds and Super-Seeds that increase the stamina stat. After the player has trained a sufficient amount, they can participate in a race, If they win the race, they unlock the next race and increase their level cap. The game also has two more leagues that are more difficult for higher trained players.</div>
 </div>
 <script>
-  $("#navbar").load("nav_bar.html"); $("#footer").load("footer.html"); 
+  $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); $("#footer").load("footer.html"); 
   </script>
 </body>
 </html>

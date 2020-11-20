@@ -732,13 +732,14 @@ display: block;
 
 <div class="main">
 
-<h1>Flight</h1>
+<h1>Flight</h1><div id="ruffle_inject_div"></div>
 <embed src="flight.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="100%" height="100%" type="application/x-shockwave-flash" scale="default" pluginspage="http://www.macromedia.com/go/getflashplayer">
 <h5>THROW your Paper Airplane across England, France, Egypt, Kenya, and Japan in FLIGHT!</h5>
  </div>
   <script data-cfasync="false" type="text/javascript" src="https://www.greatdexchange.com/a/display.php?r=2286283"></script></div>
 <script>
-  $("#navbar").load("nav_bar.html"); $("#footer").load("footer.html"); 
+  $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); $("#footer").load("footer.html"); 
   </script>
 </body>
 </html>

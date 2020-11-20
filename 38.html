@@ -29,13 +29,14 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Solitaire</h1>
+<h1>Solitaire</h1><div id="ruffle_inject_div"></div>
 <!-- Embed Code -->
 <center
 ><div id="preloader"><iframe src="preloader.html" height="500" width="800"></iframe></div>
 </center>
 <script>
 $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
 newEl.innerHTML = '<iframe src=\'https://www.embed.com/app/solitaire/klondike.html\' style=\'width: 800px; height: 600px;\' scrolling=\'no\' frameBorder=\'0\'></iframe>'

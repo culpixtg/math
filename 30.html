@@ -42,10 +42,11 @@
 <div id="navbar"></div>
 <div class="main">
    <script>alert("To play this game, it is neccesary to have flash enabled and to right-click on the game and click play. ");</script>
-<h1>Dino Run</h1>
+<h1>Dino Run</h1><div id="ruffle_inject_div"></div>
 <object type="application/x-shockwave-flash" data="dino-run.swf" width="75%" height="75%" id="swf" title="Adobe Flash Player" style="visibility: visible;"></object>
 <script>
       $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
   </script>
   
 </body>

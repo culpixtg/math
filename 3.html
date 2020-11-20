@@ -29,13 +29,14 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Pokemon Tower Defense 2</h1>
+<h1>Pokemon Tower Defense 2</h1><div id="ruffle_inject_div"></div>
 <!-- Embed Code -->
 <center
 ><div id="preloader"><iframe src="preloader.html" height="800" width="800"></iframe></div>
 </center>
 <script>
 $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
 newEl.innerHTML = '<embed src="PokemonTowerDefense2.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" bgcolor="" wmode="window" width="800" height="800" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">'

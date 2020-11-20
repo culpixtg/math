@@ -733,13 +733,14 @@ display: block;
 
 <div class="main">
 
-<h1>Clicker Heroes</h1>
+<h1>Clicker Heroes</h1><div id="ruffle_inject_div"></div>
 <object width="1000" height="563" id="swfObjID" data="https://www.coolmath-games.com/sites/cmatgame/files/games/packagedheroclicker_4.swf" type="application/x-shockwave-flash"><param name="allowScriptAccess" value="always"><param name="movie" value="packagedheroclicker.swf"><param name="menu" value="false"><param name="quality" value="high"><param name="wmode" value="direct"></object>
 <style> #gamedesc { background-color: lightgrey; width: 600px; padding: 25px; margin: 25px; } </style> <div id="gamedesc" >Clicker Heroes is a popular idle clicker game where players click in order to kill monsters. Upon death monsters will drop gold coins that the player can collect to upgrade. Players may use these gold coins in order to upgrade their current heroes or hire more heroes. Heroes can either deal damage per second to monsters or they can increase the player's click damage. Once heroes get to a certain level, they will unlock abilities that the player can then buy. After killing 10 monsters, the player will have the option to move onto the next level, and there will be periodic bosses that have to be killed within a certain time frame to progress./div.
    
 </div>
 <script>
-  $("#navbar").load("nav_bar.html"); $("#footer").load("footer.html"); 
+  $("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); $("#footer").load("footer.html"); 
   </script>
 </body>
 </html>

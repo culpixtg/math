@@ -29,15 +29,16 @@ align: center;
 <body>
 <div id="navbar"></div>
 <div class="main">
-<h1>Papa's Pizzeria</h1>
+<h1>Papa's Pizzeria</h1><div id="ruffle_inject_div"></div>
 <!-- Embed Code -->
 
  <param name="movie" value="/papaspizzeria_v2.swf"> <embed src="/papaspizzeria_v2.swf" width="700" height="500"> </embed> </object>
 
 <center>
-    <script src="ruffle.js"></script>
+    
 <script>
-$("#navbar").load("nav_bar.html"); 
+$("#navbar").load("nav_bar.html");
+$("#ruffle_inject_div").load("ruffle.html"); 
 </script>
 </body>
 </html>
