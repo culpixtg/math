@@ -1,2 +1,2 @@
-Name,Link,Status,Issues,Date Checked
-Example,example.com,broken,many,12/02/20
+<b>Name</b>,<b>Link</b>,<b>Status</b>,<b>Issues</b>,<b>Date Checked</b>
+Example,<a href='example.com'></a>,broken,some,12/02/20
