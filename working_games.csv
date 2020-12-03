@@ -1,2 +1,6 @@
-<b>Name</b>,<b>Link</b>,<b>Status</b>,<b>Issues</b>,<b>Date Checked</b>
-Example,<a href='example.com'></a>,broken,some,12/02/20
+Name,URL,Status,Notes,Date Checked
+Super Smash Flash 2,https://flashmath1.github.io/1.html,Broken,Black Screen,12/3/2020
+Tetris,https://flashmath1.github.io/2.html,Almost Perfect,Sometimes cannot rotate blocks,12/3/2020
+Pokemon Tower Defense 2,https://flashmath1.github.io/3.html,Broken,Black Screen,12/3/2020
+Learn to Fly 2,https://flashmath1.github.io/4.html,Broken,"Flying is Broken, Slightly Broken Graphics",12/3/2020
+Gun Mayhem 2,https://flashmath1.github.io/5.html,Perfect,Appears to be working perfectly,12/3/2020
