@@ -38,9 +38,12 @@ align: center;
 $("#navbar").load("nav_bar.html"); 
 var el = document.getElementById("preloader");
 var newEl = document.createElement('div');
-newEl.innerHTML = '<div id="tt-embed">></div><script>$("#tt-embed").load("tt-embed.html");</script>'
+newEl.innerHTML = '<div id="tt-embed">></div>'
 setTimeout(function(){
 el.parentNode.replaceChild(newEl, el);
+setTimeout(function(){
+$("#tt-embed").load("tt-embed.html");
+}, 1000);
 }, 5200);
 </script>
 </body>
