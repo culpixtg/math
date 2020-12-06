@@ -1,0 +1,87 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<meta name="keywords" content="2 player, game, 3 player, multiplayer, tank, trouble, mads purup, brian christensen" />
+		<meta name="description" content="Most explosive 2 player tank game online! Great for savage coffee breaks at the office." />
+		<meta name="author" content="www.purup.com" />
+		<meta name="robots" content="all" />
+		<title>TANK TROUBLE</title>
+		<link href="tt-styles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="tt-swfobject.js"></script>
+
+	    <script type="text/javascript">
+		    function removeAdSwf() {
+		        document.getElementById("preloader").style.visibility = "hidden";
+		        document.getElementById("TankTrouble").style.visibility = "visible";
+    			setTimeout("window.document.TankTroubleGame.focus();", 1);
+                showLink();
+		    }
+		    function noAdsReturned() {
+		        document.getElementById("preloader").style.visibility = "hidden";
+		        document.getElementById("TankTrouble").style.visibility = "visible";
+    			setTimeout("window.document.TankTroubleGame.focus();", 1);
+                showLink();
+		    }
+            
+            function showLink() {
+                // Insert link
+                var linkDiv = document.createElement('div');
+
+				
+				var	showCallToAction = function() {
+					var callToAction = document.createElement('img');
+
+				}
+				
+				var	hideCallToAction = function() {
+					var callToAction;
+
+				}
+				
+				setTimeout(showCallToAction, 60000);
+				
+				/*
+				// Make logo smaller and move game up when game starts.
+				// Javascript calls through getURL no longer allowed cross domain.
+				var pollIfStarted = setInterval(function() {
+					if(document.getElementById('TankTrouble').style.top === '-10px') {
+                        linkImg.style.width = '318px';
+                        linkDiv.style.left = '197px';
+                        linkDiv.style.top = '-8px';
+                        clearInterval(pollIfStarted);
+                    }
+                }, 100);
+                */
+            }
+	    </script>
+	</head>
+	<body>
+
+
+		<!-- Game container -->
+		<div id="centerColumn" style="margin: auto; width: 712px; position: absolute; top: 10px;">
+		
+			<div id="TankTrouble" style="position: absolute; top: 70px;">
+			</div>
+		</div>
+		<!-- Embed game -->
+		<script type="text/javascript">
+			<!--
+			//REMEMBER TO CHANGE THE VERSION IN logIn.php AND game.php AS WELL!!!
+			var tt = new SWFObject("TankTrouble_v4.0.swf", "TankTroubleGame", "712", "490", "8", "#ffffff");
+			tt.addParam("allowScriptAccess", "sameDomain");
+			tt.addParam("menu", "false");
+			tt.addParam("quality", "high");
+			tt.addParam("bgcolor", "#ffffff");
+
+tt.addParam('FlashVars','initCode=bnVtVXNlcnM9MA==');		
+		    tt.write("TankTrouble");
+	        setTimeout("window.document.TankTroubleGame.focus();", 1);
+            showLink();
+			// -->
+		</script>
+		
+	</body>
+</html>
