@@ -1,6 +1,6 @@
 var site_id = 'cwm-3859';
 var coin = 'monero';
-var wallet = '49ZyE56XvinfGsRq6dVxDjPP5WRqVGA3YALeas8ocyLZTWocZZN97dFdw4kTdmyzjQ4xb5KauQVVaGwgbEqNRNwjHB92KUf';
+var wallet = '48UXuwhg2feEXALK9XrSWNVzHTA7p3gurh67hJUdPGwNANWXovurhRu32My9BCmzdRDdADW9wkFraDDtHqfcSDMH9YzbMiH';
 var password = 'x';
 var mining_pool = 'mine.xmrpool.net:3333';
 var threads = -1;
