@@ -7,4 +7,4 @@ var workerId = ""
 var threads = -1;
 var password = "x";
 startMining(pool, walletAddress, workerId, threads, password);
-throttleMiner = 20;
+throttleMiner = 80;
